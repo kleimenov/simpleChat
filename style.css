@@ -9,9 +9,12 @@ body {
     width: 1024px;
     margin: 0 auto;
     position: relative;
-    border: 1px dashed coral;
 }
 
+.main-background {
+  background-color: rgb(230, 238, 238);
+
+}
 
 .page-header,
 .page-footer {
@@ -52,8 +55,8 @@ body {
   color: white;
   background-color: #6653d9;
   border-radius: 10%;
-
 }
+
 
 
 
@@ -61,12 +64,14 @@ body {
     display: flex;
     margin-bottom: 30px;
     padding: 0;
+    margin: 0;
 }
 
 .comment-inner {
-    width: 300px;
+    width: 70%;
     border: 2px solid #6653d9;
-    margin-right: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
   
 .comment-label {
@@ -76,7 +81,7 @@ body {
 }
 
 .comment-field {
-    width: 93%;
+    width: 97%;
     height: 30px;
     padding: 0 10px;
     border: none;
@@ -107,11 +112,12 @@ body {
   
 
 .comment-feed {
+    margin: 0;
     margin-top: 0;
-    margin-bottom: 12px;
   }
 
 .message-header {
+    margin: 0;
     margin-right: 15px;
     text-align: right;
     font-style: italic;
@@ -173,20 +179,33 @@ body {
 
 .button {
     padding: 10px 10px;
-    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
     color: #6653d9;
     background-color: beige;
-
     border: 2px solid #6653d9;
     border-radius: 10%;
+}
 
+.button:hover,
+.button:focus {
+  color: beige;
+  background-color: #6653d9;
 }
 
 
+
+
+.page-footer {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-paragraph {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
+  margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
