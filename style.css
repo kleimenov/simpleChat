@@ -168,7 +168,7 @@ body {
     width: 0;
     height: 0;
     bottom: 0;
-    top: 41px;
+    top: 108px;
     left: -16px;
     border: 8px solid;
     color: #6653d9;
@@ -192,6 +192,60 @@ body {
   color: beige;
   background-color: #6653d9;
 }
+
+
+
+
+.comment-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #6653d9;
+  width: 200px;
+}
+
+.data {
+  font-size: 12px;
+
+}
+
+.heart {
+  background-image: url("img/cat.jpg");
+  opacity: 0.7;
+}
+
+.heart {
+  padding: 12px 10px;
+  min-width: 40px;
+  min-height: 34px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 12px;
+  cursor: pointer;
+}
+
+.heart .likes-number {
+  margin-left: 24px;
+  line-height: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
