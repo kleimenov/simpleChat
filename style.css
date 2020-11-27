@@ -229,6 +229,10 @@ body {
   cursor: pointer;
 }
 
+.heart.added {
+  background-image: url("images/face-maskII.png");
+}
+
 .heart .likes-number {
   margin-left: 24px;
   line-height: 14px;
