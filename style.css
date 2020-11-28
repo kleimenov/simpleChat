@@ -234,8 +234,11 @@ body {
 }
 
 .heart .likes-number {
-  margin-left: 24px;
+  margin-left: 54px;
   line-height: 14px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #6653d9;
 }
 
 
