@@ -209,7 +209,7 @@ body {
 }
 
 .heart {
-  background-image: url("images/face-mask.png");
+  background-image: url("images/heart.png");
   opacity: 0.7;
 }
 
@@ -230,7 +230,7 @@ body {
 }
 
 .heart.added {
-  background-image: url("images/face-maskII.png");
+  background-image: url("images/heart-liked-purple.svg");
 }
 
 .heart .likes-number {
