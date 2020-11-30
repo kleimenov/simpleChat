@@ -16,7 +16,7 @@ commentForm.onsubmit = function (evt) {
     
 
     let newCommentHolder = document.createElement('div');
-    newCommentHolder.classList.add('comment-content-holder')
+    newCommentHolder.classList.add('comment-content-holder');
 
     let newCommentParagraph = document.createElement('p');
     newCommentParagraph.classList.add('comment');
@@ -24,31 +24,37 @@ commentForm.onsubmit = function (evt) {
     commentField.value = '';
 
 
-    let likesAndDateholder = document.createElement('div');
-    likesAndDateholder.classList.add('comment-stats')
+    let likesAndDataholder = document.createElement('div');
+    likesAndDataholder.classList.add('comment-stats');
 
-    let heartButton = document.createElement('button')
-    heartButton.classList.add('heart')
+    let heartButton = document.createElement('button');
+    heartButton.classList.add('heart');
 
     let statistic = document.createElement('span');
     statistic.classList.add('likes-number');
 
     let timeHolder = document.createElement('time');
-    timeHolder.classList.add('data')
+    timeHolder.classList.add('data');
+    timeHolder.textContent = '01 december 1990';
 
 
-
-
+    heartButton.append(statistic);
+    likesAndDataholder.append(heartButton);
+    likesAndDataholder.append(timeHolder);
 
 
     newCommentHolder.append(newCommentParagraph);
+    newCommentHolder.append(likesAndDataholder);
     newComment.append(newCommentHolder);
     commentList.append(newComment);
-    /*
-    newComment.textContent = commentField.value;
-    commentField.value = '';
 
-
-    commentList.append(newComment);
-    */
+    heartButton.onclick = () => {
+        let likesCounter = heartButton.querySelector('.likes-number');
+        if (heartButton.classList.contains('added')) {
+          likesCounter.textContent--;  
+        } else {
+          likesCounter.textContent++;
+        };
+        heartButton.classList.toggle('added');
+        }
   };
