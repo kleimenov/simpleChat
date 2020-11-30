@@ -70,6 +70,7 @@ body {
 .comment-inner {
     width: 70%;
     border: 2px solid #6653d9;
+    margin-left: 27px;
     margin-right: 15px;
     margin-bottom: 15px;
   }
@@ -144,7 +145,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     background-color: beige;
-    border: 1px solid blueviolet;
+    border: 1px solid #6653d9;
     color: #6653d9;
   }
 
@@ -222,7 +223,7 @@ body {
   font-size: 16px;
   border: none;
   /*outline: none;*/
-  background-size: contain;
+  background-size: 30%;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 12px;
@@ -234,10 +235,10 @@ body {
 }
 
 .heart .likes-number {
-  margin-left: 54px;
+  margin-left: 25px;
   line-height: 14px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 17px;
   color: #6653d9;
 }
 
