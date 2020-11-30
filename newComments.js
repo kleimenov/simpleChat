@@ -14,6 +14,7 @@ commentForm.onsubmit = function (evt) {
     let newComment = document.createElement('li');
     newComment.classList.add('user-comment');
     
+
     let newCommentHolder = document.createElement('div');
     newCommentHolder.classList.add('comment-content-holder')
 
@@ -21,6 +22,23 @@ commentForm.onsubmit = function (evt) {
     newCommentParagraph.classList.add('comment');
     newCommentParagraph.textContent = commentField.value;
     commentField.value = '';
+
+
+    let likesAndDateholder = document.createElement('div');
+    likesAndDateholder.classList.add('comment-stats')
+
+    let heartButton = document.createElement('button')
+    heartButton.classList.add('heart')
+
+    let statistic = document.createElement('span');
+    statistic.classList.add('likes-number');
+
+    let timeHolder = document.createElement('time');
+    timeHolder.classList.add('data')
+
+
+
+
 
 
     newCommentHolder.append(newCommentParagraph);
